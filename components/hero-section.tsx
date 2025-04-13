@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { motion } from "framer-motion"
+import { ChevronRight } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -37,6 +38,24 @@ export function HeroSection() {
           repeat: Infinity
         }}
       />
+
+      {/* Navigation links at the top */}
+      <div className="relative z-10 container mx-auto px-4 pt-6">
+        <div className="flex justify-center gap-6 text-white/80 font-medium">
+          <Link href="/about" className="hover:text-white transition-colors">
+            About Us
+          </Link>
+          <Link href="/services" className="hover:text-white transition-colors">
+            Services
+          </Link>
+          <Link href="/faq" className="hover:text-white transition-colors">
+            FAQ
+          </Link>
+          <Link href="/contact" className="hover:text-white transition-colors">
+            Contact
+          </Link>
+        </div>
+      </div>
 
       <div className="container relative mx-auto min-h-screen flex items-center px-4 py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center w-full">
@@ -105,6 +124,27 @@ export function HeroSection() {
                   View Dashboard
                 </Button>
               </motion.div>
+            </Link>
+          </motion.div>
+
+          {/* Additional links */}
+          <motion.div 
+            className="mt-8 flex justify-center gap-8 text-white/70 text-sm"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            <Link href="/services" className="flex items-center hover:text-white transition-colors">
+              <span>Our Services</span>
+              <ChevronRight className="h-3 w-3 ml-1" />
+            </Link>
+            <Link href="/contact" className="flex items-center hover:text-white transition-colors">
+              <span>Get in Touch</span>
+              <ChevronRight className="h-3 w-3 ml-1" />
+            </Link>
+            <Link href="/faq" className="flex items-center hover:text-white transition-colors">
+              <span>View FAQs</span>
+              <ChevronRight className="h-3 w-3 ml-1" />
             </Link>
           </motion.div>
         </div>
