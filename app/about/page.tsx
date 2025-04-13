@@ -55,7 +55,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-64 md:h-full">
               <Image 
-                src="/placeholder.jpg" 
+                src="/image.jpg" 
                 alt="Feedback Compass team" 
                 fill
                 className="object-cover rounded-lg"
