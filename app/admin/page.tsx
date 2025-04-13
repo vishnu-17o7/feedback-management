@@ -278,7 +278,7 @@ export default function AdminPage() {
 
   if (isLoading) {
     return (
-      <div className="container mx-auto py-10">
+      <div className="container mx-auto py-10 px-4 md:px-6">
         <div className="flex justify-center items-center h-64">
           <div>
             <LoadingSpinner />
@@ -289,7 +289,7 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 px-4 md:px-6">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
         <div>
           <h1 className="text-3xl font-bold">Feedback Management</h1>
