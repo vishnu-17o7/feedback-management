@@ -38,8 +38,8 @@ export function HeroSection() {
         }}
       />
 
-      <div className="container relative mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
-        <div className="mx-auto max-w-4xl text-center">
+      <div className="container relative mx-auto min-h-screen flex items-center px-4 py-24 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center w-full">
           <motion.img
             src="/feedback_compass_logo.png"
             alt="Feedback Compass Logo"
@@ -84,7 +84,10 @@ export function HeroSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Button size="lg" className="bg-white text-purple-700 hover:bg-gray-100">
+                <Button
+                  size="lg"
+                  className="bg-white text-purple-700 font-bold border border-purple-200 shadow hover:bg-purple-50 transition"
+                >
                   Submit Feedback
                 </Button>
               </motion.div>
@@ -94,7 +97,11 @@ export function HeroSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-purple-700 text-purple-700 bg-white/80 hover:bg-purple-50 font-bold transition"
+                >
                   View Dashboard
                 </Button>
               </motion.div>

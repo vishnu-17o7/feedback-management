@@ -32,7 +32,7 @@ export function Navbar() {
               className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-md transition-transform duration-300 group-hover:scale-105"
               style={{ background: "white" }}
             />
-            <span className="text-xl font-bold text-white transition-colors duration-300 group-hover:text-indigo-100 drop-shadow-lg">
+            <span className="text-xl font-bold text-purple-700 transition-colors duration-300 group-hover:text-purple-900 drop-shadow-lg">
               ClientCompass
             </span>
           </Link>

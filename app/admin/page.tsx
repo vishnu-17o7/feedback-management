@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { StarRating } from "@/components/star-rating"
 import { TagBadge } from "@/components/tag-badge"
+import { LoadingSpinner } from "@/components/loading-spinner"
 import { Check, Filter, Search } from "lucide-react"
 import {
   type Client,
@@ -279,7 +280,9 @@ export default function AdminPage() {
     return (
       <div className="container mx-auto py-10">
         <div className="flex justify-center items-center h-64">
-          <p>Loading...</p>
+          <div>
+            <LoadingSpinner />
+          </div>
         </div>
       </div>
     )
