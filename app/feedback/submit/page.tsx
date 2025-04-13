@@ -13,6 +13,8 @@ import { z } from "zod"
 import { StarRating } from "@/components/star-rating"
 import { useEffect, useState } from "react"
 import { type Client, type Project, getClients, getProjects, submitFeedback } from "@/lib/supabase"
+import { LoadingSpinner } from "@/components/loading-spinner"
+import { FeedbackSubmittedSplash } from "@/components/feedback-submitted"
 
 // Helper function to convert array to comma-separated string for submission
 function formatTagsForSubmission(tags: string[]): string {
@@ -58,6 +60,7 @@ export default function FeedbackSubmitPage() {
   const [clients, setClients] = useState<Client[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSplash, setShowSplash] = useState(false)
 
   // Initialize the form with properly typed values
   const form = useForm<FeedbackFormValues>({
@@ -138,7 +141,8 @@ export default function FeedbackSubmitPage() {
           description: "Thank you for your feedback!",
         });
 
-        // Redirect to home page
+        setShowSplash(true)
+        // Redirect to home page after splash
         setTimeout(() => {
           router.push("/");
         }, 2000);
@@ -162,7 +166,31 @@ export default function FeedbackSubmitPage() {
       <div className="container mx-auto py-10">
         <Card className="max-w-2xl mx-auto">
           <CardContent className="flex items-center justify-center py-10">
-            <p>Loading...</p>
+            <LoadingSpinner />
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
+
+  if (showSplash) {
+    return (
+      <div className="container mx-auto py-10">
+        <Card className="max-w-2xl mx-auto">
+          <CardContent>
+            <FeedbackSubmittedSplash />
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
+
+  if (isSubmitting) {
+    return (
+      <div className="container mx-auto py-10">
+        <Card className="max-w-2xl mx-auto">
+          <CardContent className="flex items-center justify-center py-10">
+            <LoadingSpinner label="Submitting..." />
           </CardContent>
         </Card>
       </div>
