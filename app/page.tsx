@@ -115,7 +115,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
                 <Image
-                  src="/placeholder-user.jpg"
+                  src="/image.jpg"
                   alt="Testimonial author"
                   fill
                   className="rounded-full object-cover"
@@ -130,7 +130,7 @@ export default function Home() {
                 </p>
                 
                 <div>
-                  <p className="font-semibold text-gray-900">Sarah Johnson</p>
+                  <p className="font-semibold text-gray-900">Hari Prasad</p>
                   <p className="text-gray-600">Director of Client Services, TechSolutions Inc.</p>
                 </div>
               </div>
@@ -226,7 +226,7 @@ export default function Home() {
                   <svg className="h-5 w-5 text-gray-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-600">123 Feedback Avenue, San Francisco, CA 94103</span>
+                  <span className="text-gray-600">Coimbatore</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

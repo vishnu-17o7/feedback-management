@@ -274,7 +274,7 @@ export default function ServicesPage() {
           </div>
           <div className="relative min-h-[300px] bg-muted">
             <Image 
-              src="/placeholder.jpg" 
+              src="/image.jpg" 
               alt="TechSolutions success story" 
               fill
               className="object-cover"
