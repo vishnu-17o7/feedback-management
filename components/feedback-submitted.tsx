@@ -16,6 +16,14 @@ export function FeedbackSubmittedSplash() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh]">
+      <motion.img
+        src="/feedback_compass_logo.png"
+        alt="Feedback Compass Logo"
+        className="w-20 h-20 mb-4"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      />
       <motion.div
         initial={{ scale: 0, rotate: -90, opacity: 0 }}
         animate={{ scale: 1, rotate: 0, opacity: 1 }}

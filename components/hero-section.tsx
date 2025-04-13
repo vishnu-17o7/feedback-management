@@ -40,6 +40,14 @@ export function HeroSection() {
 
       <div className="container relative mx-auto px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-4xl text-center">
+          <motion.img
+            src="/feedback_compass_logo.png"
+            alt="Feedback Compass Logo"
+            className="mx-auto mb-6 w-20 h-20 rounded-full shadow-lg"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          />
           <motion.h1 
             className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
             initial={{ y: 50, opacity: 0 }}

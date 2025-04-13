@@ -26,7 +26,13 @@ export function Navbar() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 group">
-            <span className="text-xl font-semibold text-black group-hover:text-gray-700 transition-colors">
+            <img
+              src="/feedback_compass_logo.png"
+              alt="Feedback Compass Logo"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-md transition-transform duration-300 group-hover:scale-105"
+              style={{ background: "white" }}
+            />
+            <span className="text-xl font-bold text-white transition-colors duration-300 group-hover:text-indigo-100 drop-shadow-lg">
               ClientCompass
             </span>
           </Link>
