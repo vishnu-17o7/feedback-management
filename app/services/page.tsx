@@ -297,7 +297,7 @@ export default function ServicesPage() {
             <CardHeader>
               <CardTitle>Starter</CardTitle>
               <div className="mt-4 mb-2">
-                <span className="text-3xl font-bold">$99</span>
+                <span className="text-3xl font-bold">₹8,199</span>
                 <span className="text-muted-foreground"> / month</span>
               </div>
               <CardDescription>For small businesses and teams</CardDescription>
@@ -336,7 +336,7 @@ export default function ServicesPage() {
             <CardHeader>
               <CardTitle>Professional</CardTitle>
               <div className="mt-4 mb-2">
-                <span className="text-3xl font-bold">$249</span>
+                <span className="text-3xl font-bold">₹20,599</span>
                 <span className="text-muted-foreground"> / month</span>
               </div>
               <CardDescription>For growing businesses</CardDescription>

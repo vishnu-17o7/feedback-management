@@ -114,7 +114,7 @@ export default function ContactPage() {
             <CardDescription>Send us an email</CardDescription>
           </CardHeader>
           <CardContent>
-            <p className="text-lg font-medium">hello@feedbackcompass.com</p>
+            <p className="text-lg font-medium">vishnu.17.offcl@gmail.com</p>
             <p className="text-muted-foreground mt-1">We'll respond within 24 hours</p>
           </CardContent>
         </Card>
@@ -161,7 +161,7 @@ export default function ContactPage() {
                 </h3>
                 <p className="text-muted-foreground">
                   For technical support:<br />
-                  support@feedbackcompass.com<br />
+                  vishnu.17.offcl@gmail.com<br />
                   Or use our help center
                 </p>
               </div>
@@ -352,7 +352,7 @@ export default function ContactPage() {
             <h3 className="font-medium text-lg mb-2">How can I schedule a demo?</h3>
             <p className="text-muted-foreground">
               You can schedule a demo by filling out the contact form and selecting "Product Demo" 
-              in the interest field, or by emailing demos@feedbackcompass.com directly.
+              in the interest field, or by emailing vishnu.17.offcl@gmail.com directly.
             </p>
           </div>
 
@@ -367,7 +367,7 @@ export default function ContactPage() {
           <div>
             <h3 className="font-medium text-lg mb-2">Where can I get technical support?</h3>
             <p className="text-muted-foreground">
-              Technical support is available through our help center, via email at support@feedbackcompass.com, 
+              Technical support is available through our help center, via email at vishnu.17.offcl@gmail.com, 
               or by phone during business hours for priority support clients.
             </p>
           </div>
